@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+        integrity="sha256-7VVaJ5GDwFQiLIc+eNksQLUSSY5JNZtqv9o2BI8UGYg=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./src/css/main.css"> -->
+    <link rel="stylesheet" href="./public/css/main.css">
+    <title>Canvas</title>
+</head>
+
+<body>
+    <div id="wrapper-loading-page">
+        <nav class="nav">
+            <a class="nav-name" href="#">Piskel Clone</a>
+            <div class="nav_btn_container">
+                <!-- <a href="index.html" target="_blank"> -->
+                    <button id="btn_to-project">
+                        Create Sprite
+                    </button>
+                <!-- </a> -->
+            </div>
+        </nav>
+
+        <div class="container-main-information">
+            <section class="container-main-information-intro">
+                <div>
+                    <h2>
+                        This app is a prototype of Piskel Clone editor<br>
+                        for creating animated pixel gifs
+                    </h2>
+                </div>
+                <div>
+                    <img src="assets/images/image.png" width="1024" height="500">
+                </div>
+            </section>
+            <section class="container-main-information-examples">
+                <h3>Animated examples:</h3>
+                <ul class="container-main-information-examples-list">
+                    <li>
+                        <img src="">
+                    </li>
+                    <li>
+                        <img src="">
+                    </li>
+                    <li>
+                        <img src="">
+                    </li>
+                    <li>
+                        <img src="">
+                    </li>
+                </ul>
+            </section>
+            <section class="container-main-information-features">
+                <div class="container-main-information-features-list">
+                    <div class="container-main-information-features-list-left">
+                        <div>
+                            <h3>
+                                Live Preview
+                            </h3>
+                            <img src="">
+                        </div>
+                        <div>
+                            <h3>
+                                Google Sign In
+                            </h3>
+                            <img src="">
+                        </div>
+
+                        <div class="container-main-information-features-list-left">
+                            <div>
+                                <h3>
+                                    Export gifs
+                                </h3>
+                                <img src="">
+                            </div>
+                            <div>
+                                <h3>
+                                    Original
+                                </h3>
+                                <img src="">
+                            </div>
+                        </div>
+
+                    </div>
+            </section>
+
+        </div>
+
+
+        <div class="footer">
+            <div class="footer-author">
+                <h2>Created by <a href="https://github.com/DaryaZel?tab=repositories" target="_blank">DaryaZel</a></h2>
+            </div>
+            <div class="footer-github">
+
+                    <a href="" target="_blank">
+                        <h4>Check <strong>DaryaZel's</strong> github repo</h4>
+                    </a>
+                </div>
+            </div>
+    </div>
+    <div id="wrapper-main-page" style="display: none">
+        <header class="section-header">
+            <nav class="section-header-nav">
+                <div class="section-header-nav-navigation">
+                    <div class="section-header-nav-navigation-item"></div>
+                    <div class="section-header-nav-navigation-item"></div>
+                    <div class="section-header-nav-navigation-item"></div>
+                </div>
+                <div class="section-header-nav-logo">
+                    <span>CodeJam - Pallete</span>
+                </div>
+                <div class="section-header-nav-menu">
+                    <ul class="section-header-nav-menu-item">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="section-main">
+            <div class="section-main-sidebar">
+                <div class="section-main-sidebar-tools">
+                    <ul class="section-main-sidebar-tools-list">
+                        <li class="section-main-sidebar-tools-list__item"><img
+                                class="section-main-sidebar-tools-list__item-img active" id="pencil"
+                                src="assets/icons/Vector5.png" alt="img2">Pencil #1
+                        </li>
+                        <li class="section-main-sidebar-tools-list__item"><img
+                                class="section-main-sidebar-tools-list__item-img" id="pencil2"
+                                src="assets/icons/Vector5.png" alt="img2">Pencil #2
+                        </li>
+                        <li class="section-main-sidebar-tools-list__item"><img
+                                class="section-main-sidebar-tools-list__item-img" id="pencil3"
+                                src="assets/icons/Vector5.png" alt="img2">Pencil #3
+                        </li>
+                        <li class="section-main-sidebar-tools-list__item"><img
+                                class="section-main-sidebar-tools-list__item-img" id="paint_bucket"
+                                src="assets/icons/Vector1.png" alt="img1">Paint bucket</li>
+                        <li class="section-main-sidebar-tools-list__item"><img
+                                class="section-main-sidebar-tools-list__item-img" id="choose_color"
+                                src="assets/icons/Vector2.png" alt="img2">Choose color</li>
+                        <li class="section-main-sidebar-tools-list__item"><img
+                                class="section-main-sidebar-tools-list__item-img" id="line"
+                                src="assets/icons/Vector3.png" alt="img3">Line</li>
+                        <li class="section-main-sidebar-tools-list__item"><img
+                                class="section-main-sidebar-tools-list__item-img" id="eraser"
+                                src="assets/icons/Vector4.png" alt="img4">Eraser</li>
+                        <li class="section-main-sidebar-tools-list__item" id="clear"><img
+                                class="section-main-sidebar-tools-list__item-img" src="assets/icons/Vector6.png"
+                                alt="img4">Clear</li>
+                    </ul>
+                </div>
+                <div class="section-main-sidebar-colors">
+                    <ul class="section-main-sidebar-colors-list">
+                        <li id="сurrent_color" class="section-main-sidebar-colors-list__item">
+                            <input type="color" id="сurrent" name="head"
+                                class="section-main-sidebar-colors-list__item-round" value="#e66465">
+                            <label for="head"> Current color</label>
+                        </li>
+                        <li id="previous_color" class="section-main-sidebar-colors-list__item">
+                            <input type="color" id="previous" name="head"
+                                class="section-main-sidebar-colors-list__item-round" value="#e13665">
+                            <label for="head">Previous color</label>
+                        </li>
+                        </li>
+                        <li class="section-main-sidebar-colors-list__item">
+                            <div class="section-main-sidebar-colors-list__item-round red"></div>
+                            Red
+                        </li>
+                        <li class="section-main-sidebar-colors-list__item">
+                            <div class="section-main-sidebar-colors-list__item-round blue"></div>
+                            Blue
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-canvas">
+                <canvas id="canvas" width="512" height="512">
+                </canvas>
+
+            </div>
+            <div class="section-main-switch">
+                <button id="btn_4x4" class="section-main-switch__button active">4x4</button>
+                <button id="btn_32x32" class="section-main-switch__button">32x32</button>
+                <button id="btn_128x128" class="section-main-switch__button">128x128</button>
+            </div>
+
+        </main>
+    </div>
+</body>
+<script src="public/js/app.js"></script>
+<!-- <script src="src/js/main.js"></script> -->
+
+</html>
