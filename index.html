@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
         integrity="sha256-7VVaJ5GDwFQiLIc+eNksQLUSSY5JNZtqv9o2BI8UGYg=" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="./src/css/main.css"> -->
+    <!-- <link rel="stylesheet" href="./src/css/loading-page.css">
+    <link rel="stylesheet" href="./src/css/main.css"> -->
     <link rel="stylesheet" href="./public/css/main.css">
     <title>Canvas</title>
 </head>
@@ -16,22 +17,21 @@
 <body>
     <div id="wrapper-loading-page">
         <nav class="nav">
-            <a class="nav-name" href="#">Piskel Clone</a>
+            <a class="nav-name" href="https://www.piskelapp.com/">
+                <img src="assets/images/logo_piskel.png" alt="Piskel Logo">
+            </a>
             <div class="nav_btn_container">
-                <!-- <a href="index.html" target="_blank"> -->
-                    <button id="btn_to-project">
-                        Create Sprite
-                    </button>
-                <!-- </a> -->
+                <button id="btn_to-project">
+                    Create Sprite
+                </button>
             </div>
         </nav>
-
         <div class="container-main-information">
             <section class="container-main-information-intro">
                 <div>
                     <h2>
                         This app is a prototype of Piskel Clone editor<br>
-                        for creating animated pixel gifs
+                        for animated sprites & pixel art
                     </h2>
                 </div>
                 <div>
@@ -39,56 +39,53 @@
                 </div>
             </section>
             <section class="container-main-information-examples">
-                <h3>Animated examples:</h3>
+                <h3>Example sprites :</h3>
                 <ul class="container-main-information-examples-list">
                     <li>
-                        <img src="">
+                        <img src="assets/gifs/gif1.gif">
                     </li>
                     <li>
-                        <img src="">
+                        <img src="assets/gifs/gif2.gif">
                     </li>
                     <li>
-                        <img src="">
+                        <img src="assets/gifs/gif3.gif">
                     </li>
                     <li>
-                        <img src="">
+                        <img src="assets/gifs/gif4.gif">
                     </li>
                 </ul>
             </section>
             <section class="container-main-information-features">
-                <div class="container-main-information-features-list">
-                    <div class="container-main-information-features-list-left">
-                        <div>
-                            <h3>
-                                Live Preview
-                            </h3>
-                            <img src="">
-                        </div>
-                        <div>
-                            <h3>
-                                Google Sign In
-                            </h3>
-                            <img src="">
-                        </div>
-
-                        <div class="container-main-information-features-list-left">
-                            <div>
-                                <h3>
-                                    Export gifs
-                                </h3>
-                                <img src="">
-                            </div>
-                            <div>
-                                <h3>
-                                    Original
-                                </h3>
-                                <img src="">
-                            </div>
-                        </div>
-
+                <h3>Piskel Features:</h3>
+                <div class="container-main-information-features-list-grid-container">                    
+                    <div class="container-main-information-features-list-grid-item">
+                        <h3>
+                            Live Preview
+                        </h3>
+                        <img src="assets/features/live-preview.gif">
                     </div>
+                    <div class="container-main-information-features-list-grid-item">
+                        <img src="assets/features/signin.png">
+                        <h3>
+                            Google Sign in
+                        </h3>
+                    </div>
+                    <div class="container-main-information-features-list-grid-item">
+                        <h3>
+                            Export to GIF
+                        </h3>
+                        <img src="assets/features/gif.jpg">
+                    </div>
+                    <div class="container-main-information-features-list-grid-item">
+                        <a href="https://github.com/piskelapp/piskel">
+                            <img src="assets/features/open-source.gif">
+                        </a>
+                        <h3>
+                            Open Source
+                        </h3>
+                    </div>
+                </div>
             </section>
-
         </div>
 
 
@@ -98,11 +95,11 @@
             </div>
             <div class="footer-github">
 
-                    <a href="" target="_blank">
-                        <h4>Check <strong>DaryaZel's</strong> github repo</h4>
-                    </a>
-                </div>
+                <a href="" target="_blank">
+                    <h4>Check <strong>DaryaZel's</strong> github repo</h4>
+                </a>
             </div>
+        </div>
     </div>
     <div id="wrapper-main-page" style="display: none">
         <header class="section-header">
@@ -130,31 +127,31 @@
                     <ul class="section-main-sidebar-tools-list">
                         <li class="section-main-sidebar-tools-list__item"><img
                                 class="section-main-sidebar-tools-list__item-img active" id="pencil"
-                                src="assets/icons/Vector5.png" alt="img2">Pencil #1
+                                src="assets/icons/Vector5.png" alt="img2" data-tooltip="Pencil #1 (Alt+P)">Pencil #1
                         </li>
                         <li class="section-main-sidebar-tools-list__item"><img
                                 class="section-main-sidebar-tools-list__item-img" id="pencil2"
-                                src="assets/icons/Vector5.png" alt="img2">Pencil #2
+                                src="assets/icons/Vector5.png" alt="img2" data-tooltip="Pencil #2 (Alt+O)">Pencil #2
                         </li>
                         <li class="section-main-sidebar-tools-list__item"><img
                                 class="section-main-sidebar-tools-list__item-img" id="pencil3"
-                                src="assets/icons/Vector5.png" alt="img2">Pencil #3
+                                src="assets/icons/Vector5.png" alt="img2"  data-tooltip="Pencil #3 (Alt+I)">Pencil #3
                         </li>
                         <li class="section-main-sidebar-tools-list__item"><img
                                 class="section-main-sidebar-tools-list__item-img" id="paint_bucket"
-                                src="assets/icons/Vector1.png" alt="img1">Paint bucket</li>
+                                src="assets/icons/Vector1.png" alt="img1"  data-tooltip="Paint Bucket (Alt+B)">Paint bucket</li>
                         <li class="section-main-sidebar-tools-list__item"><img
                                 class="section-main-sidebar-tools-list__item-img" id="choose_color"
-                                src="assets/icons/Vector2.png" alt="img2">Choose color</li>
+                                src="assets/icons/Vector2.png" alt="img2"  data-tooltip="Choose color (Alt+C)">Choose color</li>
                         <li class="section-main-sidebar-tools-list__item"><img
                                 class="section-main-sidebar-tools-list__item-img" id="line"
-                                src="assets/icons/Vector3.png" alt="img3">Line</li>
+                                src="assets/icons/Vector3.png" alt="img3"  data-tooltip="Line (Alt+L)">Line</li>
                         <li class="section-main-sidebar-tools-list__item"><img
                                 class="section-main-sidebar-tools-list__item-img" id="eraser"
-                                src="assets/icons/Vector4.png" alt="img4">Eraser</li>
+                                src="assets/icons/Vector4.png" alt="img4"  data-tooltip="Eraser (Alt+E)">Eraser</li>
                         <li class="section-main-sidebar-tools-list__item" id="clear"><img
                                 class="section-main-sidebar-tools-list__item-img" src="assets/icons/Vector6.png"
-                                alt="img4">Clear</li>
+                                alt="img4"  data-tooltip="Clear (Alt+X)">Clear</li>
                     </ul>
                 </div>
                 <div class="section-main-sidebar-colors">
@@ -187,8 +184,8 @@
 
             </div>
             <div class="section-main-switch">
-                <button id="btn_4x4" class="section-main-switch__button active">4x4</button>
-                <button id="btn_32x32" class="section-main-switch__button">32x32</button>
+                <button id="btn_4x4" class="section-main-switch__button active">32x32</button>
+                <button id="btn_32x32" class="section-main-switch__button">64x64</button>
                 <button id="btn_128x128" class="section-main-switch__button">128x128</button>
             </div>
 
